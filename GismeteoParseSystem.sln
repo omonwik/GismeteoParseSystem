@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GismeteoParseSystem", "GismeteoParseSystem\GismeteoParseSystem.csproj", "{311A67DC-4F6F-49AA-BEBE-47AE7581550D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserView", "UserView\UserView.csproj", "{6607896B-433A-4701-822C-88249C064E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{642CD14C-3966-4C7A-A97F-D5C7106CCBF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{311A67DC-4F6F-49AA-BEBE-47AE7581550D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{311A67DC-4F6F-49AA-BEBE-47AE7581550D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{311A67DC-4F6F-49AA-BEBE-47AE7581550D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6607896B-433A-4701-822C-88249C064E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6607896B-433A-4701-822C-88249C064E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6607896B-433A-4701-822C-88249C064E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6607896B-433A-4701-822C-88249C064E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642CD14C-3966-4C7A-A97F-D5C7106CCBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642CD14C-3966-4C7A-A97F-D5C7106CCBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642CD14C-3966-4C7A-A97F-D5C7106CCBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642CD14C-3966-4C7A-A97F-D5C7106CCBF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

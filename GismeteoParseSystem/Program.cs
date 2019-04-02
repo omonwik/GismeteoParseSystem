@@ -1,6 +1,7 @@
 using HtmlAgilityPack;
 using System;
 using System.Net;
+using System.ServiceModel;
 using System.Text;
 
 namespace GismeteoParseSystem
@@ -19,9 +20,25 @@ namespace GismeteoParseSystem
             }
 
             document.LoadHtml(html);
+            //Test();
             ParseHtml(document);
+            //Test();
 
             Console.ReadKey();
+        }
+
+        private static void Test()
+        {
+            Console.Title = "Client";
+
+            var adress = new Uri("http://127.0.0.1:4040/IContract");
+            var bindings = new BasicHttpBinding();
+            var endpoint = new EndpointAddress(adress);
+
+            var factory = new ChannelFactory<IContract>(bindings, endpoint);
+            var chanel = factory.CreateChannel();
+            var s = chanel.GetData();
+            Console.WriteLine(s);
         }
 
         private static void ParseHtml(HtmlDocument document)
