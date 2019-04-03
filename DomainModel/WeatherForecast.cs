@@ -22,10 +22,17 @@ namespace DomainModel
         public string GeomagneticField { get; set; }
         [Required]
         public string WaterTemperature { get; set; }
+        [Required]
+        public string ParseDate { get; set; }
+
+        public WeatherForecast()
+        {
+
+        }
 
         public WeatherForecast(string city, string temperature, string feeling, string wind,
                                string pressure, string humidity, string geomagneticField,
-                               string waterTemperature)
+                               string waterTemperature, string parseDate)
         {
             City = city;
             Temperature = temperature;
@@ -35,6 +42,7 @@ namespace DomainModel
             Humidity = humidity;
             GeomagneticField = geomagneticField;
             WaterTemperature = waterTemperature;
+            ParseDate = parseDate;
         }
     }
 }
