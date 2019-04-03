@@ -1,4 +1,5 @@
-﻿using System.ServiceModel;
+﻿using DomainModel;
+using System.ServiceModel;
 
 namespace TestApp
 {
@@ -6,6 +7,6 @@ namespace TestApp
     public interface IContract
     {
         [OperationContract]
-        string GetData();
+        WeatherForecast GetData();
     }
 }

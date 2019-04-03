@@ -34,8 +34,17 @@ namespace UserView
 
             var factory = new ChannelFactory<IContract>(bindings, endpoint);
             var chanel = factory.CreateChannel();
-            var s = chanel.GetData();
-            TestLabel.Content = s;
+            var forecast = chanel.GetData();
+
+            City.Text = forecast.City;
+            Temperature.Text = forecast.Temperature;
+            Feeling.Text = forecast.Feeling;
+            Wind.Text = forecast.Wind;
+            Pressure.Text = forecast.Pressure;
+            Humidity.Text = forecast.Humidity;
+            GeomagneticField.Text = forecast.GeomagneticField;
+            WaterTemperature.Text = forecast.WaterTemperature;
+            LastUpdateDate.Content = forecast.ParseDate;
         }
     }
 }

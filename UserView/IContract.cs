@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using DomainModel;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UserView
 {
@@ -11,6 +7,6 @@ namespace UserView
     public interface IContract
     {
         [OperationContract]
-        string GetData();
+        WeatherForecast GetData();
     }
 }

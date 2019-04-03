@@ -7,8 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="" HorizontalAlignment="Left" Name="TestLabel" Margin="342,257,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Name="StartButton" Margin="371,156,0,0" VerticalAlignment="Top" Width="75" Click="StartButton_Click"/>
+        <Button Content="Обновить данные" HorizontalAlignment="Left" Name="RefreshData" Margin="640,51,0,0" VerticalAlignment="Top" Width="110" Click="StartButton_Click" Height="28"/>
+        <Label Content="Город: " HorizontalAlignment="Left" Margin="47,51,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="City" HorizontalAlignment="Left" Height="23" Margin="170,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.516,-0.601"/>
+        <Label Content="Температура: " HorizontalAlignment="Left" Margin="47,92,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Temperature" HorizontalAlignment="Left" Height="23" Margin="170,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.516,-0.601"/>
+        <Label Content="По ощущению: " HorizontalAlignment="Left" Margin="47,132,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Feeling" HorizontalAlignment="Left" Height="23" Margin="170,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ветер: " HorizontalAlignment="Left" Margin="47,171,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Wind" HorizontalAlignment="Left" Height="23" Margin="170,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Давление: " HorizontalAlignment="Left" Margin="49,210,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Pressure" HorizontalAlignment="Left" Height="23" Margin="170,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Влажность: " HorizontalAlignment="Left" Margin="47,249,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Humidity" HorizontalAlignment="Left" Height="23" Margin="170,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Геомагнитное поле: " HorizontalAlignment="Left" Margin="47,288,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="GeomagneticField" HorizontalAlignment="Left" Height="23" Margin="170,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Температура воды: " HorizontalAlignment="Left" Margin="47,319,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="WaterTemperature" HorizontalAlignment="Left" Height="23" Margin="171,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Дата последнего обновления: " HorizontalAlignment="Left" Margin="474,136,0,0" VerticalAlignment="Top"/>
+        <Label Content="" Name="LastUpdateDate" HorizontalAlignment="Left" Margin="658,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.409,-0.295"/>
 
     </Grid>
 </Window>

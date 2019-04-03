@@ -1,28 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DomainModel;
+using System.Linq;
 
 namespace TestApp
 {
     public sealed class Service : IContract
     {
-        private readonly string[] randomStrings = new string[]
-        {
-            "Test1",
-            "Test2",
-            "Test4",
-            "Test5",
-            "Test6",
-            "Test7",
-            "Test8",
-            "Test9",
-            "Test10",
-        };
+        private readonly ForecastContext _context;
 
-        public string GetData()
+        public Service()
         {
-            var random = new Random();
-            var number = random.Next(0, 9);
-            return randomStrings[number];
+            _context = new ForecastContext();
+        }
+
+        public WeatherForecast GetData()
+        {
+            return _context.WeatherForecasts.OrderByDescending(forecast => forecast.Id).FirstOrDefault();
         }
     }
 }
