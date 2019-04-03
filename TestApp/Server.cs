@@ -14,6 +14,7 @@ namespace ForecastDataServer
             var host = GetHost();
             host.Open();
 
+            Console.WriteLine("Server started successfully");
             Console.ReadKey();
 
             host.Close();
