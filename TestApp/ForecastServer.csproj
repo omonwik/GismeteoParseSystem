@@ -72,11 +72,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IContract.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="IForecastTransfer.cs" />
+    <Compile Include="Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service.svc.cs">
-      <DependentUpon>Service.svc</DependentUpon>
+    <Compile Include="ForecastTransferService.svc.cs">
+      <DependentUpon>ForecastTransferService.svc</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -91,7 +91,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service.svc" />
+    <Content Include="ForecastTransferService.svc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DomainModel\DomainModel.csproj">

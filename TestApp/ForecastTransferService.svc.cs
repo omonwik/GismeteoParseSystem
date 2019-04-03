@@ -1,13 +1,13 @@
 ﻿using DomainModel;
 using System.Linq;
 
-namespace TestApp
+namespace ForecastDataServer
 {
-    public sealed class Service : IContract
+    public sealed class ForecastTransferService : IForecastTransfer
     {
         private readonly ForecastContext _context;
 
-        public Service()
+        public ForecastTransferService()
         {
             _context = new ForecastContext();
         }

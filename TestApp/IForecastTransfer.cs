@@ -1,10 +1,10 @@
 ﻿using DomainModel;
 using System.ServiceModel;
 
-namespace UserView
+namespace ForecastDataServer
 {
     [ServiceContract]
-    public interface IContract
+    public interface IForecastTransfer
     {
         [OperationContract]
         WeatherForecast GetData();

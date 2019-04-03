@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UserView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Погода" Height="450" Width="800">
     <Grid>
         <Button Content="Обновить данные" HorizontalAlignment="Left" Name="RefreshData" Margin="640,51,0,0" VerticalAlignment="Top" Width="110" Click="StartButton_Click" Height="28"/>
         <Label Content="Город: " HorizontalAlignment="Left" Margin="47,54,0,0" VerticalAlignment="Top"/>
