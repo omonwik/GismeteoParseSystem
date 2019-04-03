@@ -1,4 +1,6 @@
+using DomainModel;
 using HtmlAgilityPack;
+using MySql.Data.MySqlClient;
 using System;
 using System.Net;
 using System.ServiceModel;
@@ -12,6 +14,11 @@ namespace GismeteoParseSystem
         {
             string html = null;
             var document = new HtmlDocument();
+            var context = new ForecastContext();
+
+            var forecast = new WeatherForecast("Москва", "+4", "+3", "3", "2.2", "22", "123", "+1");
+            context.WeatherForecasts.Add(forecast);
+            context.SaveChanges();
 
             using (var client = new WebClient())
             {
@@ -20,25 +27,9 @@ namespace GismeteoParseSystem
             }
 
             document.LoadHtml(html);
-            //Test();
             ParseHtml(document);
-            //Test();
 
             Console.ReadKey();
-        }
-
-        private static void Test()
-        {
-            Console.Title = "Client";
-
-            var adress = new Uri("http://127.0.0.1:4040/IContract");
-            var bindings = new BasicHttpBinding();
-            var endpoint = new EndpointAddress(adress);
-
-            var factory = new ChannelFactory<IContract>(bindings, endpoint);
-            var chanel = factory.CreateChannel();
-            var s = chanel.GetData();
-            Console.WriteLine(s);
         }
 
         private static void ParseHtml(HtmlDocument document)
