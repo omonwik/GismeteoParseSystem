@@ -74,8 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GismeteoParseManager.cs" />
-    <Compile Include="IContract.cs" />
+    <Compile Include="GismeteoService.cs" />
+    <Compile Include="GismeteoParser.cs" />
+    <Compile Include="IForecastTransfer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -22,12 +22,12 @@ namespace ForecastDataServer
         
         private static ServiceHost GetHost()
         {
-            var adress = new Uri(string.Format("{0}/IForecastTransfer", ConfigurationManager.AppSettings["Url"]));
+            var address = new Uri(ConfigurationManager.AppSettings["Uri"]);
             var bindings = new BasicHttpBinding();
             var contract = typeof(IForecastTransfer);
 
             var host = new ServiceHost(typeof(ForecastTransferService));
-            host.AddServiceEndpoint(contract, bindings, adress);
+            host.AddServiceEndpoint(contract, bindings, address);
 
             return host;
         }

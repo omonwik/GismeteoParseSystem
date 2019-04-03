@@ -24,25 +24,5 @@ namespace DomainModel
         public string WaterTemperature { get; set; }
         [Required]
         public string ParseDate { get; set; }
-
-        public WeatherForecast()
-        {
-
-        }
-
-        public WeatherForecast(string city, string temperature, string feeling, string wind,
-                               string pressure, string humidity, string geomagneticField,
-                               string waterTemperature, string parseDate)
-        {
-            City = city;
-            Temperature = temperature;
-            Feeling = feeling;
-            Wind = wind;
-            Pressure = pressure;
-            Humidity = humidity;
-            GeomagneticField = geomagneticField;
-            WaterTemperature = waterTemperature;
-            ParseDate = parseDate;
-        }
     }
 }

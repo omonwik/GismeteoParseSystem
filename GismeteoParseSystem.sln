@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GismeteoParseSystem", "Gism
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserView", "UserView\UserView.csproj", "{6607896B-433A-4701-822C-88249C064E76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForecastServer", "TestApp\ForecastServer.csproj", "{642CD14C-3966-4C7A-A97F-D5C7106CCBF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForecastServer", "ForecastServer\ForecastServer.csproj", "{642CD14C-3966-4C7A-A97F-D5C7106CCBF4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModel", "DomainModel\DomainModel.csproj", "{5E2F0598-CEBB-4481-BF99-B3B7AD2C298C}"
 EndProject

@@ -17,7 +17,7 @@ namespace UserView
 
         private static IForecastTransfer GetContractChangel()
         {
-            var adress = new Uri(string.Format("{0}/IForecastTransfer", ConfigurationManager.AppSettings["Url"]));
+            var adress = new Uri(ConfigurationManager.AppSettings["Uri"]);
             var bindings = new BasicHttpBinding();
             var endpoint = new EndpointAddress(adress);
 

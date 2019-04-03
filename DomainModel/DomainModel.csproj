@@ -72,7 +72,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForecastContext.cs" />
+    <Compile Include="DAL\ForecastContext.cs" />
     <Compile Include="Migrations\201904031042209_init migration.cs" />
     <Compile Include="Migrations\201904031042209_init migration.Designer.cs">
       <DependentUpon>201904031042209_init migration.cs</DependentUpon>

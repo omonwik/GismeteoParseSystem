@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.ServiceModel.Web;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace WCFLayer
+namespace GismeteoParseSystem
 {
     [ServiceContract]
-    public interface IContract
+    public interface IForecastTransfer
     {
         [OperationContract]
         string GetData();
